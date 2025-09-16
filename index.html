@@ -315,7 +315,7 @@ if (["d64"].includes(ext))                        return "vice_x64";
 if (["gb","gba"].includes(ext))                   return ext;      // Game Boy / GBA
 if (["nds"].includes(ext))                        return "nds";    // Nintendo DS
 if (["vb"].includes(ext))                         return "vb";     // Virtual Boy
-if (["iso", "cso", "pbp"].includes(ext))          return "psp";    // PlayStation Portable
+if (["iso", "cso", "pbp"].includes(ext))          return "ppsspp";    // PlayStation Portable
 
 // fallback UI
 return await new Promise(resolve => {
@@ -328,7 +328,7 @@ return await new Promise(resolve => {
     "NES":               "nes",
     "SNES":              "snes",
     "PlayStation":       "psx",
-    "PlayStation Portable": "psp",
+    "PlayStation Portable": "ppsspp",
     "DOS":               "dosbox_pure",
     "Sega MD":           "segaMD",
     "Sega MS":           "segaMS",
